@@ -8,7 +8,6 @@ import { Label } from "../ui/labels/labelPrincipal"
 import { Button } from "../ui/buttons/buttonPrincipal"
 import { Input } from "../ui/input/inputPrincipal"
 import { User } from "@/@types/userCaption"
-// import { LeadCaptionService } from "@/services/leadCaption"
 
 
 export default function Newsletter() {
