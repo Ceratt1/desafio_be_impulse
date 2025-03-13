@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import Courses from "@/components/sections/courses";
 import Features from "@/components/sections/features";
 import Hero from "@/components/sections/hero";
 
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Features />
+      <Courses />
     </div>
   );
 }
