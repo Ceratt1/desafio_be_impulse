@@ -35,6 +35,18 @@ npm run start
 ```
 
 
+
+# 🧪 Testando o projeto
+
+Foi integrado um arquivo para testes unitários utilizando jest, os testes que foram feitos foi o que eu consegui pensar na hora 
+para demonstrar domínio da ferramenta 
+
+```bash
+npm run test
+```
+
+
+
 # 📌 Notas importantes
 
 Sobre o componente Image do Next.js:
