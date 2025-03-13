@@ -1,6 +1,5 @@
 import Link from "next/link"
-import ButtonNavBar from "./ui/buttons/buttonNavBar"
-
+import { Button } from "./ui/buttons/buttonPrincipal"
 export default function Navbar() {
   return (
     <nav className="border-b bg-white/80 backdrop-blur-md sticky top-0 z-50">
@@ -25,8 +24,8 @@ export default function Navbar() {
             FAQ
           </Link>
         </div>
-        <ButtonNavBar >Começar agora</ButtonNavBar>
-      </div>
+        <Button className="bg-orange-600 hover:bg-orange-700 text-white">Começar agora</Button>      
+        </div>
     </nav>
   )
 }
