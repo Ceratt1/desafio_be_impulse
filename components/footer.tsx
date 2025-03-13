@@ -21,7 +21,6 @@ export default function Footer() {
                 <a key={social} href="#" className="text-gray-400 hover:text-orange-500 transition-colors">
                   <div className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center">
                     <span className="sr-only">{social}</span>
-                    {/* Placeholder for social icons */}
                     <div className="w-5 h-5"></div>
                   </div>
                 </a>

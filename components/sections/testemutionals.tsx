@@ -1,4 +1,4 @@
-// import Image from "next/image"
+import Image from "next/image"
 
 export default function Testimonials() {
   const testimonials = [
@@ -41,14 +41,14 @@ export default function Testimonials() {
               <div className="absolute -top-4 -left-4 text-5xl text-orange-300"></div>
               <p className="text-gray-700 mb-6 relative z-10">{testimonial.text}</p>
               <div className="flex items-center gap-4">
-                {/* <Image
-                  src={testimonial.image || "/placeholder.svg"}
+                <Image
+                  src={testimonial.image }
                   alt={testimonial.name}
                   width={50}
                   height={50}
                   className="rounded-full"
-                /> */}
-                <img width={50} height={50} src={testimonial.image} alt={testimonial.name} className="w-16 h-16 object-cover rounded-full " />
+                />
+                {/* <img width={50} height={50} src={testimonial.image} alt={testimonial.name} className="w-16 h-16 object-cover rounded-full " /> */}
                 <div>
                   <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
                   <p className="text-orange-600 text-sm">{testimonial.role}</p>

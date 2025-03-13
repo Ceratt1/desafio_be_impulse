@@ -1,6 +1,7 @@
 'use client'
 import { ArrowRight, Users, Star } from "lucide-react";
 import { Button } from "../ui/buttons/buttonPrincipal";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -60,11 +61,19 @@ export default function Hero() {
 
           <div className="relative">
             <div className="relative bg-white rounded-2xl shadow-md overflow-hidden border border-orange-200">
-              <img  //infelizmente irei utilizar aqui o img, pois o next/image simplesmente não quer funcionar na minha máquina. Estou a mais de 2 horas tentando resolver isso... :c
+
+              <Image
+                src="/peoplesTogetherLandingPage.jpg"
+                alt="pessoas juntas conversando"
+                width={500}
+                height={500}
+                className="w-full h-60 sm:h-full object-cover"
+              />
+              {/* <img  //infelizmente irei utilizar aqui o img, pois o next/image simplesmente não quer funcionar na minha máquina. Estou a mais de 2 horas tentando resolver isso... :c
                 src="/peoplesTogetherLandingPage.jpg"
                 className="w-full h-60 sm:h-full object-cover"
                 alt="pessoas juntas conversando"
-              />
+              /> */}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 sm:p-6">
                 <div className="flex items-center gap-3 text-white pb-10">
                   <div className="bg-orange-500 p-2 rounded-xl">
