@@ -7,8 +7,8 @@ import { ArrowRight, CheckCircle } from "lucide-react"
 import { Label } from "../ui/labels/labelPrincipal"
 import { Button } from "../ui/buttons/buttonPrincipal"
 import { Input } from "../ui/input/inputPrincipal"
-import { User } from "@/@types/userCaption"
-import { LeadCaptionService } from "@/services/leadCaption"
+// import { User } from "@/@types/userCaption"
+// import { LeadCaptionService } from "@/services/leadCaption"
 
 export default function Newsletter() {
   const [formState, setFormState] = useState({

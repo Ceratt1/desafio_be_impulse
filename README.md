@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Impulse Technical Challenge
 
-## Getting Started
+Olá! 👋  
 
-First, run the development server:
+Estou extremamente feliz e grato pela oportunidade de realizar este desafio técnico para a Impulse. Foi uma experiência incrível que me permitiu expandir meus conhecimentos e, principalmente, aprofundar minhas habilidades no desenvolvimento frontend. Sempre me identifiquei muito com o backend (especialmente utilizando NestJS), mas este desafio me mostrou o quanto posso crescer no frontend também — e confesso que me surpreendi com a evolução!
 
+Agradeço desde já pelo seu tempo avaliando este projeto. Espero que o resultado seja tão satisfatório para você quanto foi desafiador e enriquecedor para mim. 💜
+
+---
+
+## 🚀 Como executar o projeto
+
+**Pré-requisitos:**  
+- Node.js >= 18.x (recomendado utilizar a versão especificada no `.nvmrc`)
+
+**Passos:**  
+1. Configure a versão do Node:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+nvm install 22.11
+nvm use 22.11
+# Caso sua versão atual do Node seja inferior a 18, ajuste conforme necessário
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Rode o projeto
 
-## Learn More
+```bash
+npm run build
+npm run start
+```
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# 📌 Notas importantes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Sobre o componente Image do Next.js:
+Durante o desenvolvimento, enfrentei alguns desafios com o componente Image em modo de desenvolvimento (dev). Por isso, em alguns trechos do código, você encontrará a tag <img> convencional comentada — era uma alternativa que estava testando. Fique à vontade para descomentar e ajustar conforme necessário! 😊
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Qualquer dúvida ou feedback, estou à disposição.
