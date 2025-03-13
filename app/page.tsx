@@ -2,6 +2,7 @@ import Navbar from "@/components/navbar";
 import Courses from "@/components/sections/courses";
 import Features from "@/components/sections/features";
 import Hero from "@/components/sections/hero";
+import Newsletter from "@/components/sections/newslatter";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Courses />
+      <Newsletter />
     </div>
   );
 }
