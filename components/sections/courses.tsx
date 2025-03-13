@@ -1,6 +1,7 @@
 import { ChevronRight, Users, Clock } from "lucide-react";
 import { Button } from "../ui/buttons/buttonPrincipal";
 import { Card } from "../ui/cards/cardPrincipal";
+import Image from "next/image";
 
 export default function Courses() {
   const courses = [
@@ -52,8 +53,8 @@ export default function Courses() {
         {courses.map((course, index) => (
           <Card key={index} className="overflow-hidden group hover:shadow-xl transition-all hover:-translate-y-1 border-orange-100">
             <div className="relative">
-              {/* <Image src={course.image} alt={course.title} width={500} height={300} className="w-full h-48 object-cover transition-transform group-hover:scale-105" /> */}
-              <img src={course.image} alt={course.title} className="w-full h-48 object-cover transition-transform group-hover:scale-105" />
+              <Image src={course.image} alt={course.title} width={500} height={300} className="w-full h-48 object-cover transition-transform group-hover:scale-105" />
+              {/* <img src={course.image} alt={course.title} className="w-full h-48 object-cover transition-transform group-hover:scale-105" /> */}
 
               {course.popular && (
                 <div className="absolute top-4 right-4 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full">
