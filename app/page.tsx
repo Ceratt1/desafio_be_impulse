@@ -1,10 +1,12 @@
 // import Image from "next/image";
 
+import Navbar from "@/components/navbar";
+
 export default function Home() {
   return (
     
-    <>
-    <h1>Home</h1>
-    </>
+    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white">
+      <Navbar />
+    </div>
   );
 }
