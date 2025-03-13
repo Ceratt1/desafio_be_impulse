@@ -46,7 +46,8 @@ export default function Testimonials() {
                   alt={testimonial.name}
                   width={50}
                   height={50}
-                  className="rounded-full"
+                  className="w-16 h-16 object-cover rounded-full"
+                  priority
                 />
                 {/* <img width={50} height={50} src={testimonial.image} alt={testimonial.name} className="w-16 h-16 object-cover rounded-full " /> */}
                 <div>

@@ -68,6 +68,7 @@ export default function Hero() {
                 width={500}
                 height={500}
                 className="w-full h-60 sm:h-full object-cover"
+                priority
               />
               {/* <img  //infelizmente irei utilizar aqui o img, pois o next/image simplesmente não quer funcionar na minha máquina. Estou a mais de 2 horas tentando resolver isso... :c
                 src="/peoplesTogetherLandingPage.jpg"
