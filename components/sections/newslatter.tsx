@@ -7,8 +7,9 @@ import { ArrowRight, CheckCircle } from "lucide-react"
 import { Label } from "../ui/labels/labelPrincipal"
 import { Button } from "../ui/buttons/buttonPrincipal"
 import { Input } from "../ui/input/inputPrincipal"
-// import { User } from "@/@types/userCaption"
+import { User } from "@/@types/userCaption"
 // import { LeadCaptionService } from "@/services/leadCaption"
+
 
 export default function Newsletter() {
   const [formState, setFormState] = useState({
@@ -37,22 +38,34 @@ export default function Newsletter() {
 
     try {
       
-      /**
-       * 
-       *  Apenas deixando como exemplo para quem quiser fazer o cadastro no banco utilizando a service. Como está mockado, deixarei assim...
-       * 
-      const payloadUser : User = {
-        name: formState.name,
-        email: formState.email
-      }
-      const response = await LeadCaptionService.userRegister(payloadUser)
-      */
-      await new Promise((resolve) => setTimeout(resolve, 1000))
+
+     const payloadUser : User = {
+       name: formState.name,
+       email: formState.email
+     }
+     const response = await fetch("/api/lead", {
+      method: "POST", 
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+      },
+      body: JSON.stringify(payloadUser)
+    });
+
+    
+      if (response.body) {
       setFormState((prev) => ({
         ...prev,
         submitted: true,
         loading: false,
       }))
+    }else{
+      setFormState((prev) => ({
+        ...prev,
+        loading: false,
+        error: "Ocorreu um erro. Por favor, tente novamente.",
+      }))
+    }
     } catch {
       setFormState((prev) => ({
         ...prev,

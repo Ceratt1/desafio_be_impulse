@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import Courses from "@/components/sections/courses";
 import Features from "@/components/sections/features";
@@ -7,7 +8,6 @@ import Testimonials from "@/components/sections/testemutionals";
 
 export default function Home() {
   return (
-    
     <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white">
       <Navbar />
       <Hero />
@@ -15,6 +15,7 @@ export default function Home() {
       <Courses />
       <Newsletter />
       <Testimonials />
+      <Footer />
     </div>
   );
 }
